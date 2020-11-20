@@ -5,17 +5,16 @@ function Book(props) {
     const { img, title, author } = props
 
     const clickHandler = () => {
-        alert('siemka')
+        alert(`Sorry bro, but you don\'t have enough cash for ${title}:(`)
     }
     return (
-        <div>
-            <article className='book'>
+        <div className="book">
+            <article className='book-cover'>
                 <img src={img} alt='book' />
                 <h1>{title}</h1>
                 <h4>{author}</h4>
-                <button type='button' onClick={clickHandler}>example</button>
             </article>
-
+            <button type='button' onClick={clickHandler}>Buy</button>
         </div>)
 }
 
