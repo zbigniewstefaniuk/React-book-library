@@ -13,7 +13,7 @@ export const books = [{
 {
     id: 3,
     img: 'https://m.media-amazon.com/images/I/51zWIiR62qL.jpg',
-    title: 'Django 3 By Example: Build powerful and reliable Python web applications from scratch, 3rd Edition',
+    title: 'Django 3 By Example 3rd Edition',
     author: 'Antonio Mele'
 },
 {

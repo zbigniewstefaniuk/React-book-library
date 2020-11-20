@@ -14,7 +14,9 @@ function Book(props) {
                 <h1>{title}</h1>
                 <h4>{author}</h4>
             </article>
-            <button type='button' onClick={clickHandler}>Buy</button>
+            <div className='buy-section'>
+                <button type='button' id='buyButton' onClick={clickHandler}>Buy</button>
+            </div>
         </div>)
 }
 
