@@ -4,6 +4,7 @@ html {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  --book-cover: 2px 0px 9px 0px rgba(0,0,0,0.75);
 }
 
 body {
@@ -68,6 +69,12 @@ body {
           transition-duration: .4s;
 }
 
+.book .book-cover img {
+  border-radius: 1rem;
+  -webkit-box-shadow: var(--book-cover);
+          box-shadow: var(--book-cover);
+}
+
 .book .book-cover h1 {
   color: #4c5c68;
   margin-top: 0.5rem;
@@ -106,12 +113,12 @@ body {
 }
 
 .book .buy-section {
-  margin: .25rem 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 35px;
 }
 /*# sourceMappingURL=App.css.map */
