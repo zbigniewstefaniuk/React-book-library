@@ -43,8 +43,6 @@ body {
   display: grid;
   gap: 2rem;
   grid-auto-rows: 1fr;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
 }
 
 @media screen and (min-width: 768px) {
@@ -55,11 +53,12 @@ body {
 }
 
 .book {
+  position: relative;
   background: #dadada;
   border-radius: 1rem;
 }
 
-.book-cover {
+.book .book-cover {
   border-radius: 1rem;
   padding: 1rem 2rem;
   background: #dadada;
@@ -69,23 +68,25 @@ body {
           transition-duration: .4s;
 }
 
-.book-cover h1 {
+.book .book-cover h1 {
   color: #4c5c68;
   margin-top: 0.5rem;
 }
 
-.book-cover h4 {
+.book .book-cover h4 {
   color: #6f8eaa;
   font-size: .85rem;
 }
 
-.book-cover:hover {
+.book .book-cover:hover {
   cursor: pointer;
   opacity: 70%;
 }
 
-button {
-  font-weight: 500;
+.book #buyButton {
+  margin: 0 0 1rem 0;
+  position: absolute;
+  bottom: 0;
   width: 70px;
   padding: .8rem;
   color: #47505f;
@@ -98,9 +99,19 @@ button {
           transition-duration: .4s;
 }
 
-button:hover {
+.book #buyButton:hover {
   color: #ececec;
   cursor: pointer;
   background: #515766 !important;
+}
+
+.book .buy-section {
+  margin: .25rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=App.css.map */
