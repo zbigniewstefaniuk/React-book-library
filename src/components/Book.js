@@ -1,11 +1,11 @@
 import React from 'react'
 
 function Book(props) {
-    // destructuring 
+    // destructuring and because of spread operator its no needed to do props.book
     const { img, title, author } = props
 
     const clickHandler = () => {
-        alert(`Sorry bro, but you don\'t have enough cash for ${title}:(`)
+        alert(`Sorry bro, but you don't have enough cash for ${title} :(`)
     }
     return (
         <div className="book">

@@ -6,11 +6,13 @@ import { books } from './books_db/books'
 
 // React components
 import Book from './components/Book'
+import SearchForm from './components/SearchForm'
 
 
 function App() {
   return (
     <div className="App">
+      <SearchForm />
       <section className="book-list">
         {books.map((book) => {
           return (
@@ -23,4 +25,4 @@ function App() {
 }
 
 
-export default App;
+export default App

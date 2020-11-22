@@ -34,4 +34,10 @@ export const books = [{
     img: 'https://images-na.ssl-images-amazon.com/images/I/21vWUE2t23L._SX320_BO1,204,203,200_.jpg',
     title: 'Mein Kampf',
     author: 'Adolf Hitler'
+},
+{
+    id: 7,
+    img: 'https://images-na.ssl-images-amazon.com/images/I/517h-u1AQlL._SX482_BO1,204,203,200_.jpg',
+    title: 'I Love You to the Moon and Back',
+    author: 'Amelia Hepworth'
 }]

@@ -34,7 +34,7 @@ body {
 
 .book-list {
     width: 90vw;
-    max-width: 1370px;
+    max-width: 1570px;
     margin: 5rem auto;
     display: grid;
     gap: 2rem;
@@ -52,9 +52,10 @@ body {
     position: relative;
     background: #dadada;
     border-radius: 1rem;
+    max-width: 352px;
+    max-height: 700px;
 
     .book-cover {
-
         border-radius: 1rem;
         padding: 1rem 2rem;
         background: #dadada;
@@ -65,7 +66,8 @@ body {
         img {
             border-radius: 1rem;
             box-shadow: var(--book-cover);
-
+            width: 100%;
+            height: 100%;
         }
 
         h1 {
