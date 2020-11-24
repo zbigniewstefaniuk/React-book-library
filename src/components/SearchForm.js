@@ -4,16 +4,6 @@ import React, { useState } from 'react'
 import { books } from '../books_db/books'
 import Book from '../components/Book'
 
-const people = [
-    "Siri",
-    "Alexa",
-    "Google",
-    "Facebook",
-    "Twitter",
-    "Linkedin",
-    "Sinkedin"
-]
-
 
 function SearchForm() {
     const [searchTerm, setSearchTerm] = useState("")
@@ -23,18 +13,43 @@ function SearchForm() {
 
     const BooksCoverCards = books.map((book) => {
         return (
-            book.title,
             <Book key={book.id} {...book} />// spreading properties 
         )
-    })    
-    const {id, img, title } = BooksCoverCards
-    console.log(BooksCoverCards)
+    })
 
-    
+    const kurwa = books.map((book) => {
+        return ({ ...book })
+    })
+
+    const FilteredCoverCards = kurwa.filter((book) => {
+        const { id, img, title, author } = book
+        return (console.log({ id, title, author }), id, title, author)
+    })
+
+    const ForLoop = () => {
+        const TempList = []
+        BooksCoverCards.forEach((book) => {
+            TempList.push(book.props.title + ' ' + book.props.author)
+        })
+        console.log('jebac', TempList)
+        //console.log(book.props)
+        return TempList
+    }
+
+    console.log(ForLoop())
+
+
+    console.log(BooksCoverCards[0].props)
+    console.log(BooksCoverCards)
+    // console.log(FilteredCoverCards)
+    //console.log(kurwa)
+
     const results = !searchTerm
         ? BooksCoverCards
         : BooksCoverCards.filter(person =>
-            person.toLowerCase().includes(searchTerm.toLocaleLowerCase())
+            person.props.title.toLowerCase().includes(searchTerm.toLocaleLowerCase())
+        ) && BooksCoverCards.filter(person =>
+            person.props.author.toLowerCase().includes(searchTerm.toLocaleLowerCase())
         )
 
     return (

@@ -40,6 +40,10 @@ body {
     gap: 2rem;
     grid-auto-rows: 1fr;
     //grid-template-columns: repeat(3, 1fr);
+
+    // hiding dot above book cards
+    list-style-type:none;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -113,4 +117,14 @@ body {
         justify-content: center;
         height: 35px;
     }
+}
+
+input {
+    margin: 1rem;
+    background: #aeaeae;
+    border: none;
+    padding: .5rem;
+    border-radius: 2rem;
+    outline: none;
+    text-decoration: none;
 }
