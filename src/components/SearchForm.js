@@ -48,7 +48,7 @@ function SearchForm() {
         ? BooksCoverCards
         : BooksCoverCards.filter(person =>
             person.props.title.toLowerCase().includes(searchTerm.toLocaleLowerCase())
-        ) && BooksCoverCards.filter(person =>
+            ||
             person.props.author.toLowerCase().includes(searchTerm.toLocaleLowerCase())
         )
 

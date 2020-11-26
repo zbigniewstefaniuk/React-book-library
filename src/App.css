@@ -4,7 +4,7 @@ html {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  --book-cover: 2px 0px 9px 0px rgba(0,0,0,0.75);
+  --book-cover: 2px 0px 9px 0px rgba(0, 0, 0, 0.75);
 }
 
 body {
@@ -44,6 +44,7 @@ body {
   display: grid;
   gap: 2rem;
   grid-auto-rows: 1fr;
+  content-visibility: auto;
   list-style-type: none;
 }
 
@@ -135,5 +136,21 @@ input {
   border-radius: 2rem;
   outline: none;
   text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+  color: #515766;
+}
+
+:-ms-input-placeholder {
+  color: #515766;
+}
+
+::-ms-input-placeholder {
+  color: #515766;
+}
+
+::placeholder {
+  color: #515766;
 }
 /*# sourceMappingURL=App.css.map */
