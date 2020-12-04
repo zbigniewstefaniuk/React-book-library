@@ -127,8 +127,8 @@ input {
     border-radius: 2rem;
     outline: none;
     text-decoration: none;
+    &::placeholder {
+        color: #242424;
+    }
 }
 
-::placeholder {
-    color: #515766;
-}

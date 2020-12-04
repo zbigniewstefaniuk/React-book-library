@@ -138,19 +138,19 @@ input {
   text-decoration: none;
 }
 
-::-webkit-input-placeholder {
-  color: #515766;
+input::-webkit-input-placeholder {
+  color: #242424;
 }
 
-:-ms-input-placeholder {
-  color: #515766;
+input:-ms-input-placeholder {
+  color: #242424;
 }
 
-::-ms-input-placeholder {
-  color: #515766;
+input::-ms-input-placeholder {
+  color: #242424;
 }
 
-::placeholder {
-  color: #515766;
+input::placeholder {
+  color: #242424;
 }
 /*# sourceMappingURL=App.css.map */

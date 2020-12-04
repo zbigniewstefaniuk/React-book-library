@@ -1,12 +1,16 @@
-## Simple Books Library implemented using React
+<h1 align="center">Simple Books Library implemented using React</h1>
 
-In the project directory, you can run:
+<p align="center">This is small app when you can scroll trough books and search for book that you're looking, uwsing "Search" field!</p>
 
-### `npm start`
 
+<h1 align="center">Setup Instructions</h1>
+
+
+  `npm install`
+  
+  `npm start`
+ 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 

@@ -17,14 +17,6 @@ function SearchForm() {
         )
     })
 
-    const kurwa = books.map((book) => {
-        return ({ ...book })
-    })
-
-    const FilteredCoverCards = kurwa.filter((book) => {
-        const { id, img, title, author } = book
-        return (console.log({ id, title, author }), id, title, author)
-    })
 
     const ForLoop = () => {
         const TempList = []
@@ -39,11 +31,6 @@ function SearchForm() {
     console.log(ForLoop())
 
 
-    console.log(BooksCoverCards[0].props)
-    console.log(BooksCoverCards)
-    // console.log(FilteredCoverCards)
-    //console.log(kurwa)
-
     const results = !searchTerm
         ? BooksCoverCards
         : BooksCoverCards.filter(person =>
@@ -51,6 +38,7 @@ function SearchForm() {
             ||
             person.props.author.toLowerCase().includes(searchTerm.toLocaleLowerCase())
         )
+
 
     return (
         <div className="App">
