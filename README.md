@@ -1,12 +1,9 @@
 <br/>
 
-<h1 align="center">Simple Books Library implemented using React</h1>
+<h1 align="center">Simple Books Library implemented using <a href="https://reactjs.org/">React</a></h1>
 
 <p align="center">This is small app when you can scroll trough books and search for book that you're looking, uwsing "Search" field!</p>
 
-### Built With
-
-- [React](https://reactjs.org/)
 
 <h1 align="center">Setup Instructions</h1>
 
